@@ -37,8 +37,7 @@
             accounts.push({ account: account, token: token, currency : currency || '', });
         }
 
-        var sortedAccounts = accounts.sort(function(a,b) {return b.currency.length - a.currency.length;});
-        return sortedAccounts;
+        return accounts;
     }
 
     function readConfig() {
@@ -63,11 +62,11 @@
         }
     }
 
-
-
     readConfig();
     parseUrlAndStoreAccountInfo(window.location.href);
     window.BinaryBoot.parseUrl = parseOAuthResponse;
+    window.BinaryBoot.isBeta = /beta/g.test(window.location.href);
+    window.BinaryBoot.redirectUrl = window.BinaryBoot.isBeta ? '/beta' : '/';
     if(window.cordova) {
         window.BinaryBoot.appId = 1006;
     } else if(window.electron) {
@@ -76,7 +75,7 @@
         window.BinaryBoot.appId = 3588;
     } else if (/arnabk.github.io:/g.test(window.location.href)) {
         window.BinaryBoot.appId = 3604;
-    } else if (/beta/g.test(window.location.href)) {
+    } else if (window.BinaryBoot.isBeta) {
         window.BinaryBoot.appId = 4343; //This is for BETA release
     } else {
         window.BinaryBoot.appId = 1001; //This is for PROD release
@@ -85,15 +84,15 @@
 
     var redirectIndex = window.location.href.indexOf('?');
     if (~redirectIndex) {
-        if (window.location.href.indexOf('/beta') === -1) {
-            window.location.href = '/';
-        } else {
-            window.location.href = '/beta';
-        }
+        window.location.href = window.BinaryBoot.redirectUrl;
     }
 
     window.BinaryBoot.oAuthUrl = window.BinaryBoot.oAuthUrl || defaultConfig.oAuthUrl;
     window.BinaryBoot.apiUrl = window.BinaryBoot.apiUrl || defaultConfig.apiUrl;
+
+    // window.BinaryBoot.apiUrl = 'wss://www.binaryqa07.com/websockets/v3';
+    // window.BinaryBoot.appId = 1004;
+    // window.BinaryBoot.oAuthUrl = 'https://www.binaryqa07.com/oauth2/authorize';
 
     var testConfig = localStorage.getItem('test-config');
     if(testConfig) {
