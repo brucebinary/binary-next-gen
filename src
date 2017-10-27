@@ -1,7 +1,25 @@
-Hash: b0cb0b50a284182fd42c
-Version: webpack 2.1.0-beta.27
-Time: 105337ms
-     Asset     Size  Chunks             Chunk Names
-    app.js  2.15 MB       0  [emitted]  main
-app.js.map  11.7 MB       0  [emitted]  main
-    + 1353 hidden modules
+Hash: 94b7de96664f0dce040e
+Version: webpack 3.5.0
+Time: 41083ms
+     Asset     Size  Chunks                    Chunk Names
+    app.js  5.17 MB       0  [emitted]  [big]  main
+styles.css    52 kB       0  [emitted]         main
+  [17] ./src/_data/LiveData.js 10.8 kB {0} [built]
+  [41] (webpack)/buildin/global.js 509 bytes {0} [built]
+  [63] ./src/_actions/index.js 7.92 kB {0} [built]
+  [64] ./src/_data/Auth.js 4.43 kB {0} [built]
+  [65] ./src/_store/storage.js 99 bytes {0} [built]
+ [113] ./src/config.js 247 bytes {0} [built]
+ [219] ./src/_store/persistentStore.js 2.55 kB {0} [built]
+ [311] ./src/_store/root.js 6.66 kB {0} [built]
+ [557] ./src/index.js 1.64 kB {0} [built]
+ [935] ./src/_reducers/index.js 6.29 kB {0} [built]
+[1103] ./src/_routes/index.js 836 bytes {0} [built]
+[1388] ./src/_store/AppStateProvider.js 3.42 kB {0} [built]
+[1389] ./src/_store/BootProvider.js 3.48 kB {0} [built]
+[1423] ./styles/styles.scss 41 bytes {0} [built]
+[1425] ./node_modules/css-loader?{"minimize":true}!./node_modules/sass-loader/lib/loader.js!./styles/styles.scss 52.2 kB [built]
+    + 1411 hidden modules
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--0-2!node_modules/sass-loader/lib/loader.js!styles/styles.scss:
+       [0] ./node_modules/css-loader?{"minimize":true}!./node_modules/sass-loader/lib/loader.js!./styles/styles.scss 52.2 kB {0} [built]
+        + 1 hidden module
