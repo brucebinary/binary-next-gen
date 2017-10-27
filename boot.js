@@ -78,7 +78,7 @@
     } else if (window.BinaryBoot.isBeta) {
         window.BinaryBoot.appId = 4343; //This is for BETA release
     } else {
-        window.BinaryBoot.appId = 1001; //This is for PROD release
+        window.BinaryBoot.appId = 11108; // This is injected by Gulp
     }
     var lang = window.BinaryBoot.language;
 
