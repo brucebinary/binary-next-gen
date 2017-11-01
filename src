@@ -1,6 +1,6 @@
-Hash: eaecba8ad40672b476d7
+Hash: 5cf8a81672e74b2825fa
 Version: webpack 3.8.1
-Time: 84376ms
+Time: 81876ms
                          Asset      Size  Chunks                    Chunk Names
     webtrader-charts.bundle.js    906 kB       0  [emitted]  [big]  webtrader-charts
                         app.js   1.75 MB       1  [emitted]  [big]  app
@@ -24,21 +24,6 @@ webtrader-charts.bundle.js.map   2.73 MB       0  [emitted]         webtrader-ch
 [1277] ./styles/styles.scss 41 bytes {1} [built]
 [1283] ./node_modules/css-loader?{"minimize":true}!./node_modules/sass-loader/lib/loader.js!./styles/styles.scss 52.7 kB [built]
     + 1269 hidden modules
-
-WARNING in ./src/trade/trade-chart/TradeViewChart.js
-
-/Users/bruce/Documents/binary-next-gen/src/trade/trade-chart/TradeViewChart.js
-  137:2  warning  Trailing spaces not allowed  no-trailing-spaces
-
-✖ 1 problem (0 errors, 1 warning)
-
- @ ./src/trade/TradeCard.js 1:1669-1726
- @ ./src/trade/mobile/MobileTradeContainer.js
- @ ./src/trade/mobile/TradeMobile.js
- @ ./src/_routes/MobileRoutes.js
- @ ./src/_routes/index.js
- @ ./src/_store/root.js
- @ ./src/index.js
 Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--0-2!node_modules/sass-loader/lib/loader.js!styles/styles.scss:
        [0] ./node_modules/css-loader?{"minimize":true}!./node_modules/sass-loader/lib/loader.js!./styles/styles.scss 52.7 kB {0} [built]
         + 1 hidden module
