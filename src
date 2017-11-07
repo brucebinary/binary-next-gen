@@ -1,29 +1,27 @@
-Hash: 5cf8a81672e74b2825fa
-Version: webpack 3.8.1
-Time: 78743ms
-                         Asset      Size  Chunks                    Chunk Names
-    webtrader-charts.bundle.js    906 kB       0  [emitted]  [big]  webtrader-charts
-                        app.js   1.75 MB       1  [emitted]  [big]  app
-                    styles.css   52.6 kB       1  [emitted]         app
-webtrader-charts.bundle.js.map   2.73 MB       0  [emitted]         webtrader-charts
-                    app.js.map   10.6 MB       1  [emitted]         app
-                styles.css.map  87 bytes       1  [emitted]         app
-  [17] ./src/_data/LiveData.js 10.2 kB {1} [built]
-  [39] (webpack)/buildin/global.js 488 bytes {1} [built]
-  [61] ./src/_actions/index.js 1.01 kB {1} [built]
-  [62] ./src/_data/Auth.js 3.83 kB {1} [built]
-  [63] ./src/_store/storage.js 32 bytes {1} [built]
- [110] ./src/config.js 175 bytes {1} [built]
- [216] ./src/_store/persistentStore.js 1.28 kB {1} [built]
- [309] ./src/_store/root.js 5.67 kB {1} [built]
- [429] ./src/index.js 1.25 kB {1} [built]
- [983] ./src/_routes/index.js 347 bytes {1} [built]
-[1242] ./src/_store/AppStateProvider.js 2.94 kB {1} [built]
-[1243] ./src/_store/BootProvider.js 2.94 kB {1} [built]
-[1262] ./src/_store/localeData.js 730 bytes {1} [built]
-[1277] ./styles/styles.scss 41 bytes {1} [built]
-[1283] ./node_modules/css-loader?{"minimize":true}!./node_modules/sass-loader/lib/loader.js!./styles/styles.scss 52.7 kB [built]
-    + 1269 hidden modules
-Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--0-2!node_modules/sass-loader/lib/loader.js!styles/styles.scss:
+Hash: 6ada641423f0e1bddbda
+Version: webpack 3.5.0
+Time: 76792ms
+        Asset      Size  Chunks                    Chunk Names
+       app.js   2.68 MB       0  [emitted]  [big]  app
+    style.css   52.6 kB       0  [emitted]         app
+   app.js.map   11.9 MB       0  [emitted]         app
+style.css.map  86 bytes       0  [emitted]         app
+   [6] ./node_modules/react-redux/es/index.js + 14 modules 38.3 kB {0} [built]
+  [14] ./src/_data/LiveData.js 10.8 kB {0} [built]
+  [32] (webpack)/buildin/global.js 509 bytes {0} [built]
+  [51] ./src/_data/Auth.js 4.43 kB {0} [built]
+  [52] ./src/_store/storage.js 119 bytes {0} [built]
+  [84] ./src/config.js 247 bytes {0} [built]
+ [114] ./node_modules/react-router/es/index.js + 32 modules 76.3 kB {0} [built]
+ [169] ./src/_store/persistentStore.js 2.55 kB {0} [built]
+ [228] ./src/_store/root.js 6.66 kB {0} [built]
+ [331] ./src/index.js 1.35 kB {0} [built]
+ [769] ./src/_routes/index.js 836 bytes {0} [built]
+[1032] ./src/_store/AppStateProvider.js 3.42 kB {0} [built]
+[1033] ./src/_store/BootProvider.js 3.48 kB {0} [built]
+[1067] ./styles/styles.scss 41 bytes {0} [built]
+[1069] ./node_modules/css-loader?{"minimize":true}!./node_modules/sass-loader/lib/loader.js!./styles/styles.scss 52.7 kB [built]
+    + 1055 hidden modules
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--3-2!node_modules/sass-loader/lib/loader.js!styles/styles.scss:
        [0] ./node_modules/css-loader?{"minimize":true}!./node_modules/sass-loader/lib/loader.js!./styles/styles.scss 52.7 kB {0} [built]
         + 1 hidden module
