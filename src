@@ -1,6 +1,6 @@
-Hash: ca7fa922560e3e8ff3fd
+Hash: b26266b1c64d6ca1f085
 Version: webpack 3.8.1
-Time: 77456ms
+Time: 75156ms
                          Asset      Size  Chunks                    Chunk Names
     webtrader-charts.bundle.js    906 kB       0  [emitted]  [big]  webtrader-charts
                         app.js   1.65 MB       1  [emitted]  [big]  app
@@ -12,7 +12,7 @@ webtrader-charts.bundle.js.map   2.73 MB       0  [emitted]         webtrader-ch
   [69] (webpack)/buildin/module.js 495 bytes {1} [built]
  [106] ./src/layouts/layouts.css 917 bytes {1} [built]
  [235] (webpack)/buildin/amd-define.js 85 bytes {1} [built]
- [236] ./src/index.js + 447 modules 1.05 MB {1} [built] [1 warning]
+ [236] ./src/index.js + 447 modules 1.05 MB {1} [built]
  [640] ./node_modules/moment/locale ^$ 160 bytes {1} [optional] [built]
  [653] ./www/img/open.svg 2.9 kB {1} [built]
  [654] ./www/img/volatility.svg 1.23 kB {1} [built]
@@ -24,19 +24,6 @@ webtrader-charts.bundle.js.map   2.73 MB       0  [emitted]         webtrader-ch
  [677] ./styles/styles.scss 41 bytes {1} [built]
  [684] ./node_modules/css-loader?{"minimize":true}!./node_modules/sass-loader/lib/loader.js!./styles/styles.scss 52.8 kB [built]
     + 670 hidden modules
-
-WARNING in ./src/containers/MobilePage.js
-
-/Users/bruce/Documents/binary-next-gen/src/containers/MobilePage.js
-  25:39  warning  'e' is defined but never used  no-unused-vars
-
-✖ 1 problem (0 errors, 1 warning)
-
- @ ./src/deposit/DepositMobile.js 1:25-74
- @ ./src/_routes/MobileRoutes.js
- @ ./src/_routes/index.js
- @ ./src/_store/root.js
- @ ./src/index.js
 Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--3-2!node_modules/sass-loader/lib/loader.js!styles/styles.scss:
        [0] ./node_modules/css-loader?{"minimize":true}!./node_modules/sass-loader/lib/loader.js!./styles/styles.scss 52.8 kB {0} [built]
         + 1 hidden module
