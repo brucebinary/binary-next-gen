@@ -1,6 +1,6 @@
-Hash: b7ae5c9f4474d1fa5df5
+Hash: 116e348baa385c7e89a3
 Version: webpack 3.8.1
-Time: 72796ms
+Time: 83445ms
                          Asset      Size  Chunks                    Chunk Names
     webtrader-charts.bundle.js    906 kB       0  [emitted]  [big]  webtrader-charts
                         app.js   1.65 MB       1  [emitted]  [big]  app
@@ -28,16 +28,14 @@ webtrader-charts.bundle.js.map   2.73 MB       0  [emitted]         webtrader-ch
 ERROR in ./src/containers/MobilePage.js
 
 /Users/bruce/Documents/binary-next-gen/src/containers/MobilePage.js
-   5:10  warning  'setInterval' is defined but never used               no-unused-vars
-   5:23  warning  'clearInterval' is defined but never used             no-unused-vars
-   5:44  error    Absolute imports should come before relative imports  import/first
-  30:11  warning  'mobilePage' is assigned a value but never used       no-unused-vars
+  5:10  warning  'setInterval' is defined but never used               no-unused-vars
+  5:23  warning  'clearInterval' is defined but never used             no-unused-vars
+  5:44  error    Absolute imports should come before relative imports  import/first
 
-✖ 4 problems (1 error, 3 warnings)
+✖ 3 problems (1 error, 2 warnings)
 
- @ ./src/upgrade/UpgradeCard.js 1:1679-1728
- @ ./src/upgrade/UpgradeContainer.js
- @ ./src/_routes/CommonRoutes.js
+ @ ./src/examine-asset/ExamineAssetMobile.js 1:25-74
+ @ ./src/_routes/MobileRoutes.js
  @ ./src/_routes/index.js
  @ ./src/_store/root.js
  @ ./src/index.js
