@@ -1,44 +1,29 @@
-Hash: daca5025b2ca3867abfd
+Hash: a62c4df0e52fe2a72b61
 Version: webpack 3.8.1
-Time: 85602ms
+Time: 80215ms
                          Asset      Size  Chunks                    Chunk Names
     webtrader-charts.bundle.js    906 kB       0  [emitted]  [big]  webtrader-charts
                         app.js   1.65 MB       1  [emitted]  [big]  app
-                    styles.css   52.7 kB       1  [emitted]         app
+                    styles.css   52.6 kB       1  [emitted]         app
 webtrader-charts.bundle.js.map   2.73 MB       0  [emitted]         webtrader-charts
-                    app.js.map   8.87 MB       1  [emitted]         app
+                    app.js.map   8.83 MB       1  [emitted]         app
                 styles.css.map  87 bytes       1  [emitted]         app
-  [26] (webpack)/buildin/global.js 488 bytes {1} [built]
+  [29] (webpack)/buildin/global.js 488 bytes {1} [built]
   [69] (webpack)/buildin/module.js 495 bytes {1} [built]
  [106] ./src/layouts/layouts.css 917 bytes {1} [built]
  [235] (webpack)/buildin/amd-define.js 85 bytes {1} [built]
- [236] ./src/index.js + 447 modules 1.05 MB {1} [built] [1 error]
- [643] ./node_modules/moment/locale ^$ 160 bytes {1} [optional] [built]
- [655] ./www/img/favorites.svg 1.03 kB {1} [built]
- [657] ./www/img/volatility.svg 1.23 kB {1} [built]
- [658] ./www/img/forex.svg 414 bytes {1} [built]
- [659] ./www/img/indices.svg 2.51 kB {1} [built]
- [660] ./www/img/commodities.svg 629 bytes {1} [built]
- [661] ./www/img/stocks.svg 1.22 kB {1} [built]
- [665] ./node_modules/css-loader!./src/layouts/layouts.css 5.6 kB {1} [built]
- [680] ./styles/styles.scss 41 bytes {1} [built]
- [687] ./node_modules/css-loader?{"minimize":true}!./node_modules/sass-loader/lib/loader.js!./styles/styles.scss 52.8 kB [built]
-    + 673 hidden modules
-
-ERROR in ./src/containers/MobilePage.js
-
-/Users/bruce/Documents/binary-next-gen/src/containers/MobilePage.js
-  5:10  warning  'setInterval' is defined but never used               no-unused-vars
-  5:23  warning  'clearInterval' is defined but never used             no-unused-vars
-  5:44  error    Absolute imports should come before relative imports  import/first
-
-✖ 3 problems (1 error, 2 warnings)
-
- @ ./src/create-account/Signup2Mobile.js 1:25-74
- @ ./src/_routes/CommonRoutes.js
- @ ./src/_routes/index.js
- @ ./src/_store/root.js
- @ ./src/index.js
+ [236] ./src/index.js + 447 modules 1.05 MB {1} [built]
+ [640] ./node_modules/moment/locale ^$ 160 bytes {1} [optional] [built]
+ [653] ./www/img/open.svg 2.9 kB {1} [built]
+ [654] ./www/img/volatility.svg 1.23 kB {1} [built]
+ [655] ./www/img/forex.svg 414 bytes {1} [built]
+ [656] ./www/img/indices.svg 2.51 kB {1} [built]
+ [657] ./www/img/commodities.svg 629 bytes {1} [built]
+ [658] ./www/img/stocks.svg 1.22 kB {1} [built]
+ [662] ./node_modules/css-loader!./src/layouts/layouts.css 5.6 kB {1} [built]
+ [677] ./styles/styles.scss 41 bytes {1} [built]
+ [684] ./node_modules/css-loader?{"minimize":true}!./node_modules/sass-loader/lib/loader.js!./styles/styles.scss 52.8 kB [built]
+    + 670 hidden modules
 Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--3-2!node_modules/sass-loader/lib/loader.js!styles/styles.scss:
        [0] ./node_modules/css-loader?{"minimize":true}!./node_modules/sass-loader/lib/loader.js!./styles/styles.scss 52.8 kB {0} [built]
         + 1 hidden module
