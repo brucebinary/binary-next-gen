@@ -1,6 +1,6 @@
-Hash: 3d0fc6a29240e059e726
+Hash: 96fe76951937456e8d71
 Version: webpack 3.8.1
-Time: 79503ms
+Time: 75038ms
                          Asset      Size  Chunks                    Chunk Names
     webtrader-charts.bundle.js    906 kB       0  [emitted]  [big]  webtrader-charts
                         app.js   1.65 MB       1  [emitted]  [big]  app
@@ -28,12 +28,12 @@ webtrader-charts.bundle.js.map   2.73 MB       0  [emitted]         webtrader-ch
 ERROR in ./src/containers/MobilePage.js
 
 /Users/bruce/Documents/binary-next-gen/src/containers/MobilePage.js
-  5:29  error  Absolute imports should come before relative imports  import/first
+  5:44  error  Absolute imports should come before relative imports  import/first
 
 ✖ 1 problem (1 error, 0 warnings)
 
- @ ./src/create-account/Signup2Mobile.js 1:25-74
- @ ./src/_routes/CommonRoutes.js
+ @ ./src/examine-asset/ExamineAssetMobile.js 1:25-74
+ @ ./src/_routes/MobileRoutes.js
  @ ./src/_routes/index.js
  @ ./src/_store/root.js
  @ ./src/index.js
