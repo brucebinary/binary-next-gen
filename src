@@ -1,6 +1,6 @@
-Hash: 91af41bc1f0988489678
+Hash: 5a297c74b7c4a23a7256
 Version: webpack 3.8.1
-Time: 81473ms
+Time: 78952ms
                          Asset      Size  Chunks                    Chunk Names
     webtrader-charts.bundle.js    906 kB       0  [emitted]  [big]  webtrader-charts
                         app.js   1.65 MB       1  [emitted]  [big]  app
@@ -34,8 +34,8 @@ ERROR in ./src/containers/MobilePage.js
 
 ✖ 3 problems (1 error, 2 warnings)
 
- @ ./src/examine-asset/ExamineAssetMobile.js 1:25-74
- @ ./src/_routes/MobileRoutes.js
+ @ ./src/create-account/Signup2Mobile.js 1:25-74
+ @ ./src/_routes/CommonRoutes.js
  @ ./src/_routes/index.js
  @ ./src/_store/root.js
  @ ./src/index.js
