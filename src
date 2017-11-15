@@ -1,6 +1,6 @@
-Hash: b3ee3cfbc627e1d15193
+Hash: c552bcd1d65d4453b260
 Version: webpack 3.8.1
-Time: 75222ms
+Time: 85328ms
                          Asset      Size  Chunks                    Chunk Names
     webtrader-charts.bundle.js    906 kB       0  [emitted]  [big]  webtrader-charts
                         app.js   1.65 MB       1  [emitted]  [big]  app
@@ -28,17 +28,11 @@ webtrader-charts.bundle.js.map   2.73 MB       0  [emitted]         webtrader-ch
 ERROR in ./src/containers/MobilePage.js
 
 /Users/bruce/Documents/binary-next-gen/src/containers/MobilePage.js
-   5:10  warning  'setInterval' is defined but never used               no-unused-vars
-   5:23  warning  'clearInterval' is defined but never used             no-unused-vars
-   5:44  error    Absolute imports should come before relative imports  import/first
-  34:6   warning  Unexpected console statement                          no-console
-  34:18  error    Strings must use singlequote                          quotes
-  35:6   warning  Unexpected console statement                          no-console
-  36:6   warning  Unexpected console statement                          no-console
-  37:6   warning  Unexpected console statement                          no-console
-  39:6   warning  Unexpected console statement                          no-console
+  5:10  warning  'setInterval' is defined but never used               no-unused-vars
+  5:23  warning  'clearInterval' is defined but never used             no-unused-vars
+  5:44  error    Absolute imports should come before relative imports  import/first
 
-✖ 9 problems (2 errors, 7 warnings)
+✖ 3 problems (1 error, 2 warnings)
 
  @ ./src/examine-asset/ExamineAssetMobile.js 1:25-74
  @ ./src/_routes/MobileRoutes.js
