@@ -109,12 +109,10 @@
     window.BinaryBoot.oAuthUrl = defaultConfig.oAuthUrl;
     window.BinaryBoot.apiUrl = defaultConfig.apiUrl;
 
-    try {
-        // var config = JSON.parse(testConfig) || { };
-        window.BinaryBoot.appId = getAppId();
-        window.BinaryBoot.apiUrl = getSocketURL();
-        window.BinaryBoot.oAuthUrl = config.oAuthUrl || window.BinaryBoot.oAuthUrl;
-    } catch (e) { }
-
+    // var config = JSON.parse(testConfig) || { };
+    window.BinaryBoot.appId = getAppId();
+    window.BinaryBoot.apiUrl = getSocketURL();
+    window.BinaryBoot.oAuthUrl = config.oAuthUrl || window.BinaryBoot.oAuthUrl;
+    
     window.BinaryBoot.connection = new WebSocket(window.BinaryBoot.apiUrl + '?app_id=' + window.BinaryBoot.appId + '&l=' + lang);
 })();
