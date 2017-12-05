@@ -1,6 +1,20 @@
 /* eslint-disable */
 'use strict';
 
+function setLocalEndpoint(endpointUrl, appId) {
+    localStorage.setItem('config.app_id', appId);
+    localStorage.setItem('config.server_url', endpointUrl);
+    console.log('Endpoint: ' + endpointUrl + '\nApp ID: ' + appId);
+    location.reload();
+}
+
+function resetLocalEndpoint() {
+    localStorage.removeItem('config.app_id');
+    localStorage.removeItem('config.server_url');
+    console.log('Endpoint reset to default values.');
+    location.reload();
+}
+
 (function init() {
     // clean stale data in local storage
     localStorage.removeItem('assets');
@@ -27,7 +41,7 @@
         } else if (/beta/g.test(window.location.href)) {
           defaultAppID = 4343; //This is for BETA release
         } else {
-          defaultAppID = 1001; //This is for PROD release
+          defaultAppID = 11108; // This is injected by Gulp
         }
         localStorage.setItem('config.default_app_id', defaultAppID);
         return defaultAppID;
