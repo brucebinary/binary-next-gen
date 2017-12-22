@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import ReactDOM from 'react-dom';
 import moment from 'moment';
 import { Button, InputGroup, ServerErrorMsg, ErrorMsg } from 'binary-components';
 import { getConstraints } from './SettingsSelfExclusion.validation.config';
@@ -24,6 +25,7 @@ export default class SettingsSelfExclusion extends PureComponent {
 
   constructor(props) {
     super(props);
+    this.DOMNodes = {};
     const formData = this.getFormData(props);
     this.state = {
       formData,
@@ -73,7 +75,7 @@ export default class SettingsSelfExclusion extends PureComponent {
     this.setState({ errors: newErrors });
     const keys = Object.keys(newErrors);
     if (keys.length > 0) {
-      document.getElementById(keys[0]).scrollIntoView({ block: 'center', behavior: 'smooth' });
+      this.DOMNodes[keys[0]].scrollIntoView({ block: 'center', behavior: 'smooth' });
     } else {
       this.updateSelfExclusion();
     }
@@ -107,6 +109,7 @@ export default class SettingsSelfExclusion extends PureComponent {
 
   render() {
     const { formData, success, serverError, errors } = this.state;
+    const addToFormDOM = inp => { if (inp) this.DOMNodes[inp.props.id] = ReactDOM.findDOMNode(inp); }; // eslint-disable-line react/no-find-dom-node
     return (
       <div className="settings-self-exclusion">
         <form onSubmit={this.onFormSubmit}>
@@ -114,7 +117,7 @@ export default class SettingsSelfExclusion extends PureComponent {
           {Object.keys(this.state.errors) > 0 && <ErrorMsg text="Please fill the form with valid values" />}
           <UpdateNotice text="Settings updated" show={success} />
           <InputGroup
-            id="max_balance"
+            id="max_balance" ref={addToFormDOM}
             label="Maximum account cash balance"
             type="text"
             maxLength="20"
@@ -124,7 +127,7 @@ export default class SettingsSelfExclusion extends PureComponent {
           />
           {errors.max_balance && <ErrorMsg text={errors.max_balance[0]} />}
           <InputGroup
-            id="max_turnover"
+            id="max_turnover" ref={addToFormDOM}
             label="Daily turnover limit"
             type="text"
             maxLength="20"
@@ -134,7 +137,7 @@ export default class SettingsSelfExclusion extends PureComponent {
           />
           {errors.max_turnover && <ErrorMsg text={errors.max_turnover[0]} />}
           <InputGroup
-            id="max_losses"
+            id="max_losses" ref={addToFormDOM}
             label="Daily limit on losses"
             type="text"
             maxLength="20"
@@ -144,7 +147,7 @@ export default class SettingsSelfExclusion extends PureComponent {
           />
           {errors.max_losses && <ErrorMsg text={errors.max_losses[0]} />}
           <InputGroup
-            id="max_7day_turnover"
+            id="max_7day_turnover" ref={addToFormDOM}
             label="7-day turnover limit"
             type="text"
             maxLength="20"
@@ -154,7 +157,7 @@ export default class SettingsSelfExclusion extends PureComponent {
           />
           {errors.max_7day_turnover && <ErrorMsg text={errors.max_7day_turnover[0]} />}
           <InputGroup
-            id="max_7day_losses"
+            id="max_7day_losses" ref={addToFormDOM}
             label="7-day limit on losses"
             type="text"
             maxLength="20"
@@ -164,7 +167,7 @@ export default class SettingsSelfExclusion extends PureComponent {
           />
           {errors.max_7day_losses && <ErrorMsg text={errors.max_7day_losses[0]} />}
           <InputGroup
-            id="max_30day_turnover"
+            id="max_30day_turnover" ref={addToFormDOM}
             label="30-day turnover limit"
             type="text"
             maxLength="20"
@@ -174,7 +177,7 @@ export default class SettingsSelfExclusion extends PureComponent {
           />
           {errors.max_30day_turnover && <ErrorMsg text={errors.max_30day_turnover[0]} />}
           <InputGroup
-            id="max_30day_losses"
+            id="max_30day_losses" ref={addToFormDOM}
             label="30-day limit on losses"
             type="text"
             maxLength="20"
@@ -184,7 +187,7 @@ export default class SettingsSelfExclusion extends PureComponent {
           />
           {errors.max_30day_losses && <ErrorMsg text={errors.max_30day_losses[0]} />}
           <InputGroup
-            id="max_open_bets"
+            id="max_open_bets" ref={addToFormDOM}
             label="Maximum number of open positions"
             type="number"
             maxLength="4"
@@ -193,7 +196,7 @@ export default class SettingsSelfExclusion extends PureComponent {
           />
           {errors.max_open_bets && <ErrorMsg text={errors.max_open_bets[0]} />}
           <InputGroup
-            id="session_duration_limit"
+            id="session_duration_limit" ref={addToFormDOM}
             label="Session duration limit, in minutes"
             type="number"
             maxLength="5"
@@ -203,7 +206,7 @@ export default class SettingsSelfExclusion extends PureComponent {
           />
           {errors.session_duration_limit && <ErrorMsg text={errors.session_duration_limit[0]} />}
           <InputGroup
-            id="timeout_until_date"
+            id="timeout_until_date" ref={addToFormDOM}
             label="Time out until date"
             type="date"
             maxLength="10"
@@ -212,7 +215,7 @@ export default class SettingsSelfExclusion extends PureComponent {
           />
           {errors.timeout_until_date && <ErrorMsg text={errors.timeout_until_date[0]} />}
           <InputGroup
-            id="timeout_until_time"
+            id="timeout_until_time" ref={addToFormDOM}
             label="Time out until time"
             type="time"
             maxLength="8"
@@ -221,7 +224,7 @@ export default class SettingsSelfExclusion extends PureComponent {
           />
           {errors.timeout_until_time && <ErrorMsg text={errors.timeout_until_time[0]} />}
           <InputGroup
-            id="exclude_until"
+            id="exclude_until" ref={addToFormDOM}
             label="Exclude me from the website until"
             type="date"
             maxLength="10"
